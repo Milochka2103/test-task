@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oddity</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="wrapper">
+  <header class="navbar">
+    <a>Gmail</a>
+    <a>Зображення</a>
+    <button class="menuBtn"><img src="images/9dots.png"></button>
+    <button class="enter">Увійти</button>
+  </header>
+  <main>
+    <h1 class="logo" id="logo"><span class="first">G</span><span class="second">o</span><span class="third">o</span><span class="fourth">g</span><span class="fifth">l</span><span class="sixth">e</span></h1>
+    <div class="input">
+      <button class="inputBtn"></button>
+    <input type="text" class="input-search">
+    <button class="inputBtn2"><img src="images/keyboard.jpg"></button>
+    <button class="inputBtn2"><img src="images/microphone.jpg"></button>
+  </div>
+  <div class="buttons">
+  <button>Пошук Google</button>
+  <button onclick="fu()" type="text">Мені пощастить</button>
+</div>
+  <p>Мова Google: <span>English</span></p>
+  </main>
+  <footer>
+    <a class="country">Україна</a>
+    <hr>
+    <div class="footer-links">
+      <div class="partOfLinks">
+    <a>Про Google</a>
+    <a>Реклама</a>
+    <a>Для бізнесу</a>
+    <a>Як працює Пошук</a>
+  </div>
+  <div class="partOfLinks">
+    <a>Конфіденційність</a>
+    <a>Умови</a>
+    <a>Налаштування</a></div>
+  </div>
+  </footer>
+</div>
+<script>
+  let firstLetter = document.querySelector('.first');
+  let secondLetter = document.querySelector('.second');
+  let thirdLetter = document.querySelector('.third');
+  let fourth = document.querySelector('.fourth');
+  let fifth = document.querySelector('.fifth');
+  let sixth = document.querySelector('.sixth');
+
+  function fu() {
+    firstLetter.innerHTML = 'O'
+    secondLetter.innerHTML = 'd'
+    thirdLetter.innerHTML = 'd'
+    fourth.innerHTML = 'i'
+    fifth.innerHTML = 't'
+    sixth.innerHTML = 'y'
+  }
+</script>
+</body>
+</html>
